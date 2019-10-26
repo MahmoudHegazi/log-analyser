@@ -1,8 +1,9 @@
+![udacity logo](https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg "Udacity")
 # Logs Analysis - Udacity
 ### Full Stack Web Development ND
- [Udacity.com](https://www.udacity.com)
-Inline-style: 
-![udacity logo](https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg "Udacity")
+[Udacity.com](https://www.udacity.com)
+
+
 _____________________
 
     About
