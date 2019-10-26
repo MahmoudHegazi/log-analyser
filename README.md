@@ -21,19 +21,26 @@ give a report about changes in logs, views, and articles recoreds, it's connecte
 
 # Database Tables :
 
-## 1- authors
+## 1- authors  
+#### Primary Key : id
+
 id | Bio | name
 --- | --- | ---
-*primary key* | `text` | **text**
+*integer* | `text` | **text**
 
 
-## 2- articles
+
+## 2- articles 
+#### Primary Key : id, UNIQUE CONSTRAINT : slug, foreign Key: author
+ 
 author | title | slug | lead  | body | time | id  
 --- | --- | --- | --- | --- | --- | --- 
 *foreign key* | **text** | **UNIQUE CONSTRAINT** | **Text** | **Primary key**
 
 
 ## 2- articles
+#### Primary Key : id
+
 Path | IP | Method | Status | Time | ID
 --- | --- | --- | --- | --- | --- 
  **text** | **inet** | **text** | **text** | **timeStamp & TZ** | **integer (Primary)**
