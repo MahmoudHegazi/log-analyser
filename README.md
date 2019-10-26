@@ -25,16 +25,16 @@ give a report about changes in logs, views, and articles recoreds, it's connecte
 id | Bio | name
 --- | --- | ---
 *primary key* | `text` | **text**
-1 | 2 | 3
+
 
 ## 2- articles
 author | title | slug | lead  | body | time | id  
 --- | --- | --- | --- | --- | --- | --- 
 *foreign key* | **text** | **UNIQUE CONSTRAINT** | **Text** | **Primary key**
-1 | 2 | 3 | 4 | 5 | 6 | 7
+
 
 ## 2- articles
 Path | IP | Method | Status | Time | ID
 --- | --- | --- | --- | --- | --- 
  **text** | **inet** | **text** | **text** | **timeStamp & TZ** | **integer (Primary)**
-1 | 2 | 3 | 4 | 5 | 6
+
