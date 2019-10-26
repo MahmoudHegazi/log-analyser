@@ -1,12 +1,12 @@
 ![udacity logo](https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg "Udacity")
-# Logs Analysis - Udacity
+# Logs Analysis Tool - Udacity
 ### Full Stack Web Development ND
 [Udacity.com](https://www.udacity.com)
 
 
 _____________________
 
-    About
+# About
 This is a report applaction using python3, it connected to the news database , to analyas and 
 give a report about changes in logs, views, and articles recoreds, it's connected to the news database 
 
@@ -18,3 +18,8 @@ give a report about changes in logs, views, and articles recoreds, it's connecte
 
 
 ## How To set up instal and see VM on windows:
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
