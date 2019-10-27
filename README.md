@@ -58,7 +58,7 @@ author | title | slug | lead  | body | time | id
 **integer* | **text** | **text** | **Text** | **integer**
 
 
-## 2- articles
+## 3- Log
 #### Primary Key : id
 
 Path | IP | Method | Status | Time | ID
