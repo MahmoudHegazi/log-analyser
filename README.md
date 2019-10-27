@@ -67,11 +67,46 @@ Path | IP | Method | Status | Time | ID
  
  
  views:
- 
+### Return What are the most popular three articles of all time?
 ```python
 select articles.title, count(*) as a_views
 from articles join log on log.path = concat('/article/', articles.slug)
 group by articles.title order by a_views desc limit 3;
 ```
 
+### Return Who are the most popular article authors of all time?
+```python
+   SELECT authors.name, COUNT(*) AS views
+            FROM authors JOIN articles
+             ON authors.id = articles.author
+            JOIN log
+             ON log.path = concat('/article/', articles.slug)
+            GROUP BY authors.name
+            ORDER BY views DESC
+```
+
+### On which days did more than 1% of requests lead to errors?
+```python
+   create view days_errors as                                                 
+   select cast(time as date) as dte, count(*) as errors
+   from log  where status != '200 OK' 
+   group by cast(time as date)
+   order by errors desc;
+```
+```pthon
+select dte, errors from days_errors group by dte,
+errors having errors > sum(errors) / 100 order by errors desc;
+```
+
+
+### return in which day there was the max errors
+```python
+   select dte, errors from days_errors 
+   group by dte, errors having errors > sum(errors) / 100 
+   order by errors desc limit 1;
+```   
+
+   
+## Author:
+   ### Mahmoud Hegazy
 
