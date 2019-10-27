@@ -38,6 +38,27 @@ The instructions on this page will help you do this.
 4.  use cd on the file name fullstack-nanodegree-vm
 5.  then cd vagrant , and run vagrant up and vagrant ssh
 
+## DataBase Download:
+[DownLoad](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+You will need to unzip this file after downloading it. The file inside is called newsdata.sql. 
+Put this file into the vagrant directory, which is shared with your virtual machine.
+
+!To build the reporting tool, you'll need to load the site's data into your local database.
+
+cd into the vagrant directory and use the command psql -d news -f newsdata.sql
+
+*. psql — the PostgreSQL command line program
+*. -d news — connect to the database named news which has been set up for you
+*. -f newsdata.sql — run the SQL statements in the file newsdata.sql
+
+## Getting an error?
+
+If this command gives an error message, such as 
+psql: FATAL: database "news" does not exist
+psql: could not connect to server: Connection refused
+this means the database server is not running or is not set up correctly Download:
+
+[Download](https://www.google.com " download the virtual machine configuration")
 
 # Database Tables :
 
@@ -106,7 +127,8 @@ errors having errors > sum(errors) / 100 order by errors desc;
    order by errors desc limit 1;
 ```   
 
+
    
 ## Author:
-   ### Mahmoud Hegazy
-
+   ### Mahmoud Hegazy   
+   ![author photo](https://avatars2.githubusercontent.com/u/55125302?s=96&v=4 "Author")
